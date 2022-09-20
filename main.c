@@ -5,12 +5,17 @@
 
 int main(void) 
 {
-	char c;
+	int a,b;
+	float c;
 	
-	printf("input a character:");
-	scanf("%c",&c);
+	printf("분자를 입력하세요:");
+	scanf("%d",&a);
 	
-	printf("The next character of %c(%d) is %c(%d)\n",c,c,c+1,c+1);
+	printf("분모를 입력하세요:");
+	scanf("%d",&b);
+	
+	c=(float)a/b;
+	printf("나누기의 결과는%.6f 입니다.\n",c);
 	
 	return 0;
 }
